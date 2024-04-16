@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+
+    $comics = config('data.products');
+
+    /*  dd($comics); */
+
+    return view('welcome', compact('comics'));
+});
+
+Route::get('/single', function () {
+    return view('single');
 });

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 100px;
+    background-color: white;
+
+
+}
+
+nav {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+li {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 70%;
+    max-width: 1176px;
+    margin: auto
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+    padding: 1rem;
+}
