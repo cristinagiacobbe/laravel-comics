@@ -18,7 +18,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="" width="50" height="50">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

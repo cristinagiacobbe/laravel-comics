@@ -17,10 +17,11 @@ Route::get('/', function () {
 
 
     $comics = config('data.products');
+    $banners = config('data_banners.banners');
 
     /*  dd($comics); */
 
-    return view('welcome', compact('comics'));
+    return view('welcome', compact('comics', 'banners'));
 });
 
 Route::get('/single', function () {
