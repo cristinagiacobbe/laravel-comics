@@ -47,17 +47,14 @@
         </div>
     </div>
 </div>
-<div class="bottom_footer">
-    <div class="container">
-        <div class="follow">
-            <h4>FOLLOW UP</h4>
-        </div>
-        <div class="social_icons">
-            <img src="../images/footer-facebook.png" alt="">
-            <img src="../images/footer-twitter.png" alt="">
-            <img src="../images/footer-youtube.png" alt="">
-            <img src="../images/footer-pinterest.png" alt="">
-            <img src="../images/footer-periscope.png" alt="">
-        </div>
+
+<div class="bottom-footer">
+    <div class="follow">
+        <h4>FOLLOW US</h4>
+        <img src="{{Vite::asset('resources/images/footer-facebook.png')}}" alt="">
+        <img src="{{Vite::asset('resources/images/footer-twitter.png')}}" alt="">
+        <img src="{{Vite::asset('resources/images/footer-youtube.png')}}" alt="">
+        <img src="{{Vite::asset('resources/images/footer-pinterest.png')}}" alt="">
+        <img src="{{Vite::asset('resources/images/footer-periscope.png')}}" alt="">
     </div>
 </div>

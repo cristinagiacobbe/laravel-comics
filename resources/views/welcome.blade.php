@@ -9,7 +9,7 @@
             @foreach($comics as $comic)
 
             <div class="col-2">
-                <img src="{{$comic['thumb']}}" alt="">
+                <a href="{{route('single')}}"> <img src="{{$comic['thumb']}}" alt=""></a>
                 <p>{{$comic['title']}}</p>
             </div>
             @endforeach
@@ -20,6 +20,13 @@
     </button>
 </main>
 
-@yield('banner')
+<div class="banner">
+    <div class="banner-container">
+        @foreach($banners as $banner)
+        <span>{{$banner['text']}}</span>
+        <img src="{{$banner['icon']}}" alt="">
+        @endforeach
+    </div>
+</div>
 
 @endsection

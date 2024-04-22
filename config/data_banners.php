@@ -1,9 +1,10 @@
 <?php
+
 return [
     'banners' => [
         [
             "text" => "Digital Comics",
-            "icon" => "../images/buy-comics-digital-comics.png"
+            "icon" => "{{Vite::asset('resources/images/buy-comics-digital-comics.png')}}"
         ],
         [
             "text" => "Dc merchandise",
@@ -11,7 +12,7 @@ return [
         ],
         [
             "text" => "Subscription",
-            "icon" => "../images/buy-comics-subscriptions.png"
+            "icon" => "buy-comics-subscriptions.png"
         ],
         [
             "text" => "Comic Shop locator",

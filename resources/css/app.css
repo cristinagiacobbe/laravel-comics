@@ -60,7 +60,6 @@ img {
 .container {
     width: 70%;
     max-width: 1176px;
-    margin: auto
 }
 
 .row {
@@ -132,14 +131,29 @@ img {
     }
 }
 
-.bottom_footer {
+.banner {
+    background-color: var(--dc-primary);
+    height: 70px;
+}
+
+.banner-container {
+    margin: auto;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom-footer {
     background-color: var(--dc-dark);
 }
 
-.bottom_footer>.container {
-
+.follow {
+    display: flex;
+    justify-content: end;
+    width: 70%;
     gap: 1rem;
-    height: 50px;
+    margin: auto;
 }
 
 .follow h4 {
