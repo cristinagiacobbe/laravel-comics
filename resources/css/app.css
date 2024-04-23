@@ -134,6 +134,8 @@ img {
 .banner {
     background-color: var(--dc-primary);
     height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 .banner-container {

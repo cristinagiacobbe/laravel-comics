@@ -23,8 +23,8 @@
 <div class="banner">
     <div class="banner-container">
         @foreach($banners as $banner)
+        <img src="{{ Vite::asset($banner['icon']) }}" alt="" width="40" height="50">
         <span>{{$banner['text']}}</span>
-        <img src="{{$banner['icon']}}" alt="">
         @endforeach
     </div>
 </div>
