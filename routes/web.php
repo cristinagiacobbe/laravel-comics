@@ -24,5 +24,6 @@ Route::get('/', function () {
 
 Route::get('/single', function () {
     $comics = config('data.products');
-    return view('single', compact('comics'));
+    $filter_comic = config('web');
+    return view('single', compact('comics', 'filter_comic'));
 })->name('single');

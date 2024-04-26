@@ -12,6 +12,9 @@
                 <a href="{{route('single')}}"> <img src="{{$comic['thumb']}}" alt=""></a>
                 <p>{{$comic['title']}}</p>
             </div>
+
+            <?php $filter_comic = ($comic['title']) ?>
+            <p>{{$filter_comic}}</p>
             @endforeach
         </div>
     </div>
