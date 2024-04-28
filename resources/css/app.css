@@ -11,7 +11,8 @@ body {
 /* #region Common */
 :root {
     --dc-dark: #1D1C1D;
-    --dc-light: white;
+    --dc-white: white;
+    --dc-light: #f6f6f6;
     --dc-primary: #0c7dedFF;
     --dc-secondary: #313130;
 }
@@ -170,37 +171,34 @@ img {
     align-items: last baseline;
 }
 
-.blue-strip img {
-    padding-bottom: 1rem;
-}
-
-.row-singleblade {
-    background-color: white;
-}
-
-.col-6 p {
-    color: black;
-}
-
-.single-main {
-    background-color: aliceblue;
+/* #region common single.blade*/
+.d-flex {
     display: flex;
+}
+
+.w70 {
+    width: 70%;
+    margin: auto;
+}
+
+/* #endregion common single.blade*/
+
+/* #region top-card*/
+.top-card {
+    background-color: white;
+    padding: 40px;
+}
+
+.card-table {
+    width: 60%;
+    margin-right: 40px;
 
     & h3 {
         color: var(--dc-dark);
     }
-
-}
-
-.single-container {
-    width: 60%;
-    margin: auto;
-    color: var(--dc-dark);
-    display: flex;
 }
 
 thead {
-    width: 60%;
     box-sizing: border-box;
     background-color: green;
     color: antiquewhite;
@@ -208,6 +206,10 @@ thead {
 
 td {
     padding: 1rem;
+
+    & p {
+        color: var(--dc-dark);
+    }
 }
 
 td.sinistra {
@@ -224,3 +226,62 @@ td.destra {
     width: 30%;
     text-align: center;
 }
+
+.card-image {
+    & h5 {
+        color: var(--dc-dark);
+        text-align: end;
+    }
+}
+
+/*#endregion top-card*/
+
+/* #region bottom-card*/
+
+.bottom-card {
+    background-color: var(--dc-light);
+
+    & table {
+
+        & thead,
+        tbody {
+            background-color: var(--dc-light);
+            color: var(--dc-dark);
+        }
+
+        ;
+
+        & .table-title {
+            font-weight: bold;
+        }
+
+    }
+
+}
+
+/*#endregion bottom-card*/
+
+/* #region single-banner*/
+.single-banner {
+    color: var(--dc-dark);
+
+}
+
+.col-banner {
+    width: calc(100% / 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+
+    & span {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.grey {
+    filter: grayscale(50%);
+}
+
+/*#endregion single-banner*/

@@ -24,6 +24,10 @@ Route::get('/', function () {
 
 Route::get('/single', function () {
     $comics = config('data.products');
-    $filter_comic = config('web');
-    return view('single', compact('comics', 'filter_comic'));
+    $banners = config('data_banners.banners');
+    $filtered = $comics->where('id', 1);
+
+
+
+    return view('single', compact('comics', 'banners', 'filtered'));
 })->name('single');
